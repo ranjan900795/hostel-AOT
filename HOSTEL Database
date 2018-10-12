@@ -1,0 +1,22 @@
+CREATE DATABASE HOSTEL_AOT;
+
+CREATE TABLE hostellers(
+	id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    department VARCHAR(255) NOT NULL,
+    year INT NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    number VARCHAR(10) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    confirm_password VARCHAR(255) NOT NULL,
+    room_no INT,
+    hostel VARCHAR(6),
+    blood_grp VARCHAR(6),
+    profile_photo blob,
+    address VARCHAR(255),
+    residence_phone VARCHAR(10),
+    PRIMARY KEY(id)
+);	
+
+
+
