@@ -1,0 +1,23 @@
+body{
+    background-image: url('/static/img/bg-pattern.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.width{
+    border-style: solid;
+    border-width: 10px;
+}
+
+
+.color{
+    
+    color: #24326b;
+    font-family: georgia;
+}
+
+.navi{
+    background-image: url('/static/img/bg-navigation.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
