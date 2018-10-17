@@ -20,10 +20,16 @@ class Welcome extends CI_Controller {
 	 */
 	public function home()
 	{
-		$this->load->view('header');
-        $this->load->view('home');
-        $this->load->view('footer');
-	}
+        if(isset($_SESSION['id'])){
+            $this->load->view('header_loggedin');
+            $this->load->view('home');
+            $this->load->view('footer');
+        }else{
+            $this->load->view('header');
+            $this->load->view('home');
+            $this->load->view('footer');
+        }            
+    }
     
     public function about()
 	{

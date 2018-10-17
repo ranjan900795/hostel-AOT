@@ -19,16 +19,35 @@ class Registration extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
-    
-    public function signup(){
+    public function signup() {
         $this->load->view('header');
         $this->load->view('signup');
         $this->load->view('footer');
     }
-    
+
     public function signup_submit() {
         $this->load->model('students');
         $this->students->get_studentsdata();
-        
     }
+
+    public function signin_submit() {
+        $this->load->model('students');
+        $hostellers = $this->students->students_login();
+        $hostellers_id = $hostellers->id;
+        
+        if (!$hostellers_id) {
+            echo 'Authentication unsuccessful';
+        } else {
+            //session_start();
+            $_SESSION['id'] = $hostellers_id;
+            header("location:../welcome/home");
+        }
+    }
+
+    public function signout() {
+        //session_start();
+        session_destroy();
+        header("location:../welcome/home");
+    }
+
 }

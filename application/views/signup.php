@@ -7,7 +7,7 @@
     <body>
         <div class="container-fluid">
             <div class="row my-3">
-                <div class="col-12 col-md-10 col-lg-8 rounded bg-white m-auto">
+                <div class="col-12 col-md-10 col-lg-8 rounded-top bg-white m-auto">
                     <p class="text-center mt-2 text-warning">Please fill this form to become a part of hostel family....</p>
                     <form method="POST"  id="register_form">
                         <div class="form-group">
@@ -65,6 +65,7 @@
                     </form>
                 </div>
             </div>
+            
         </div>
         <script type="text/javascript" src="/static/js/bootstrap.js"></script>
         <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>

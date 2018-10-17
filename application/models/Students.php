@@ -34,4 +34,24 @@ class Students extends CI_Model {
         }
     }
     
+    public function students_login() {
+        $email = $_POST["email"];
+        $pass = $_POST["pass"];
+
+        $query = $this->db->get('hostellers');
+        $flag = 0;
+        foreach ($query->result() as $row) {
+            if ($email == $row->email && $pass == $row->password) {
+                $flag = 1;
+                $row_user = $row;
+                break;
+            } 
+        }
+        if ($flag == 0) {
+            return false;
+        } else {
+            return ($row_user);
+        }
+    }
+    
 }
