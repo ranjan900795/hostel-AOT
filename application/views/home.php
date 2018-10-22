@@ -12,7 +12,17 @@
                     <img src="/static/img/boyshostel.jpg" class="w-100 img"/>
                 </div>
                 <div class="col-md-10 col-lg-8 col-12 m-auto p-0">
-                    <p class="color_p mt-4 ml-1">In-campus Boys Hostel for 250 students and completely separate in-campus Girls Hostel for 130 students, with all amenities and internet connectivity for every hostel resident. All resident students are required to become members of the hostel mess.</p>
+                    <p class="color_p mt-4 ml-1">
+                    Hostel
+                    <br>There are separate In-campus hostels for boys and girls with round-the-clock wireless internet connectivity.All the hostels have attached canteens serving good quality Indian and Continental foods.Each hostel has facility for indoor and outdoor games.All resident students are required to become members of the hostel mess.
+
+                    
+               <br> • Hygienic Kitchen & Dining Hall
+               <br> • Round the clock Internet Facility
+               <br> • Boys hostel can accomodate 250 students and Girls hostel can accomodate 130 students.
+               <br> • Facility for all types of indoor and outdoor games
+               <br> • Flooring with marble tiles
+               <br> • Good quality food
                     <ul class="color_p">
                         <li>Boys's Hostel</li>
                         <li>Girls's Hostel</li>
