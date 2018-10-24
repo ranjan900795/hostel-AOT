@@ -41,7 +41,7 @@
                                 <p class="font-weight-bold h5 m-0 mt-3">Welcome, <?php echo $_SESSION['id'];
                                 ?>
                                 </p>
-                                <button class="btn btn-block btn-success mt-3 font-weight-bold rounded">View My Profile</button>
+                                <button class="btn btn-block btn-success mt-3 font-weight-bold rounded"><a href="../welcome/Myprofile" class="text-white">View My Profile</a></button>
                                 <p class="color_p ml-2">Last visited on: dd/mm/yy</p>
                             </div>
                             <?php
