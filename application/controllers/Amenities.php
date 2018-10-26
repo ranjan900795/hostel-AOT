@@ -20,22 +20,40 @@ class Amenities extends CI_Controller {
 	 */
 	public function gallery()
 	{
-        $this->load->view('header');
-		$this->load->view('gallery');
-        $this->load->view('footer');
+        if(isset($_SESSION['id'])){
+            $this->load->view('header_loggedin');
+            $this->load->view('gallery');
+            $this->load->view('footer');
+        }else{
+            $this->load->view('header');
+            $this->load->view('gallery');
+            $this->load->view('footer');
+        } 
 	}
     
     public function food()
 	{
-        $this->load->view('header');
-		$this->load->view('food');
-        $this->load->view('footer');
+        if(isset($_SESSION['id'])){
+            $this->load->view('header_loggedin');
+            $this->load->view('food');
+            $this->load->view('footer');
+        }else{
+            $this->load->view('header');
+            $this->load->view('food');
+            $this->load->view('footer');
+        } 
 	}
     
     public function news()
 	{
-        $this->load->view('header');
-		$this->load->view('news');
-        $this->load->view('footer');
+        if(isset($_SESSION['id'])){
+            $this->load->view('header_loggedin');
+            $this->load->view('news');
+            $this->load->view('footer');
+        }else{
+            $this->load->view('header');
+            $this->load->view('news');
+            $this->load->view('footer');
+        } 
 	}
 }
